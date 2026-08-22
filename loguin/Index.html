@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loguin</title>
+</head>
+<style>
+body{
+overflow-x: hidden;
+background-image: url("bgImg.jpg");
+background-color: black;
+color: white;
+-webkit-text-stroke: 4px, black;
+font-size: 20px;
+}
+
+.caixa{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    font-size: 20px;
+    font-family: "Letter Ghotic" ,"Optima", Times;
+
+}
+
+
+button{
+    background-image: url("button.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    -webkit-text-stroke: 4px, black;
+    font-style: inherit;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px; 
+    width:200 px;
+    font-size: 18px;
+
+}
+
+
+input{ 
+    color:white;
+    background-color: gray;
+    border-radius: 10px;
+    padding:12px;
+    width: 220px;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top:100px;
+    font-family: Helvetica;
+}
+
+@media(max-width: 600px){
+
+    .caixa{
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        margin-left: auto;
+    }
+}
+
+img{
+    border: solid;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    
+}
+</style>
+<body>
+<div class="caixa">
+        <h2> <img src="icon.png" alt="icone da empresa">Space_Coders</h2>
+
+        <form id="idForm">
+        <label for="nome">NOME</label><br>
+        <input type="text" id="usuario" required><br><br>
+        <label for="email">EMAIL</label><br>
+        <input type="email" id="email" required><br><br>
+        <label for="senha">SENHA</label><br>
+        <input type="password" id="senha" required><br><br>
+        <button type="submit"> Entrar </button>
+        </form>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
