@@ -19,7 +19,8 @@
         border: solid;
         border-color: black;
     }
-    #topo{
+
+        #topo{
         background-image: url("bgImg.jpg");
         margin-top: 10%;
         margin-bottom: 5%;
@@ -43,11 +44,41 @@
         margin-bottom: -5%;
     }
 
+    @keyframes cor{
+        100%{
+            background-color: rgb(7, 5, 22);
+            opacity: 1;
+        }
+        0%{
+            background-color: rgb(12, 7, 51);
+            opacity: 0.95;
+        }
+        
+    }
+
+    nav{
+        background-color: black;
+        animation: cor 2s infinite alternate;
+    }
+    .btn{
+        animation: cor 2s infinite alternate;
+    }
+
+
+    @media(max-width: 768px){
+        body{
+            font-size: 80%;
+        }
+        #topo{
+            margin-top: 20%;
+        }
+    }
+
 </style>     
 </head>
 <body data-bs-theme="dark" >
 
-    <nav class="navbar navbar-sm fixed-top border bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-sm fixed-top border" data-bs-theme="dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="icon.png" alt="Space=coder" id="logo" width="60px" height="60px"></a>
         </button>
@@ -92,11 +123,11 @@
                         </div>
                     </div>
                 </div> 
-                        <button class="carousel-control-prev" data-bs-target="#carouselId" data-bs-slide="prev" type="button">
+                    <button class="carousel-control-prev" data-bs-target="#carouselId" data-bs-slide="prev" type="button">
             <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-         <span class="carousel-control-next-icon"></span>  
+        <span class="carousel-control-next-icon"></span>  
         </button>               
             </div>
         </div>
@@ -107,15 +138,15 @@
 <h4>Especializada em computação em nuvem, segurança da informação e automação de processos;</h4>
 <h4>a empresa saltou de uma equipe inicial de cinco colaboradores para mais de cinquenta especialistas em menos de três anos</h4>
 </div>        
-            <div class="card text-center mx-auto mb-3 border-primary" style="width: 50rem;">
+            <div class="card text-center mx-auto mb-3 border-primary" style="width: 95%;">
                 <div class="card-body">
                     <h3  class="card-header">Convênio de empresas</h3>
                     <h4 class="card-title">Se deseja conveniar sua empresa, venha conferir nossas oportunidades e cadastre-se clicando no botão  abaixo.</h4>
-                    <a href="outraPagina" class="btn btn-primary">Clique aqui</a>
+                    <a href="outraPagina" class="btn btn-primary ">Clique aqui</a>
                 </div>
             </div>
 
-<h1 class="container-fluid text-center" id="vagas"> Vagas </h1>
+<h1 class="container-fluid text-center" id="vagas"> Vagas de Emprego </h1>
         
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
