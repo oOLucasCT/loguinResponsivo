@@ -30,7 +30,8 @@ event.preventDefault();
             }
         
      
-     alert("Login realizado com sucesso");
-     window.location.href="painel.html";
+                 alert("Login realizado com sucesso");
+                 sessionStorage.setItem("logado", "true");
+                 window.location.href="painel.html";
             
      });
